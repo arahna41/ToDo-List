@@ -137,7 +137,7 @@ body {
   justify-content: center;
 }
 .card {
-  width: 100%;
+  width: 100vw;
   box-shadow: 0px 0px 5px 5px #c3c3c3;
 }
 .profile {
@@ -198,7 +198,7 @@ input[type="checkbox"]:checked ~ label {
 .new_task_text {
   min-height: 52px;
   margin-bottom: 16px;
-  width: 225px;
+  width: 81%;
   outline: 0;
   border: 1px solid #cccccc;
   border-radius: 7px;
@@ -209,7 +209,7 @@ input[type="checkbox"]:checked ~ label {
 .new_task_button {
   display: block;
   min-height: 66px;
-  width: 247px;
+  width: 87%;
   background-color: #037c1f;
   border: 0;
   outline: 0;
@@ -220,7 +220,7 @@ input[type="checkbox"]:checked ~ label {
   font-family: "Oswald", sans-serif;
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 768px) {
   .card {
     width: 480px;
   }
