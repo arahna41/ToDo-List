@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo List UI</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div class="card">
+            <div class="profile">
+                <div class="avatar" data-src="images/avatar.jpg" data-fancybox="gallery">
+                    <img src="images/avatar.jpg" />
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="headling_card">My Tasks</h1>
+                <ul class="list" id="list">
+                    <li>
+                        <input class="input_checkbox" type="checkbox" name="wake_up" checked>
+                        <label class="label">Wake up</label>
+                    </li>
+                    <li>
+                        <input class="input_checkbox" type="checkbox" name="pay_bills" checked>
+                        <label class="label">Pay bills</label>
+                    </li>
+                      
+                    <li>
+                        <input class="input_checkbox" type="checkbox" name="horns">
+                        <label class="label">Read a book</label>
+                    </li> 
+                </ul>
+                <form class="new_task">
+                    <input type="text" class="new_task_text" id="newTask" />
+                    <input type="button" onclick="newElement()" class="new_task_button" value="Add task" />
+                </form>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+	    <script src="js/script.js"></script>
+    </body>
+</html>
