@@ -58,7 +58,7 @@ body {
   justify-content: center;
 }
 .card {
-  width: 480px;
+  width: 300px;
   box-shadow: 0px 0px 5px 5px #c3c3c3;
 }
 .profile {
@@ -113,21 +113,24 @@ input[type=checkbox]:checked ~ label {
 }
 .new_task {
   margin-top: 10px;
+  display: grid;
+  justify-items: center;
 }
 .new_task_text {
   min-height: 52px;
   margin-bottom: 16px;
-  width: 398px;
+  width: 225px;
   outline: 0;
   border: 1px solid #cccccc;
   border-radius: 7px;
   font-family: "Oswald", sans-serif;
   padding: 0 10px;
+  box-shadow: inset 0px 0px 12px 0px #c3c3c3;
 }
 .new_task_button {
   display: block;
   min-height: 66px;
-  width: 420px;
+  width: 247px;
   background-color: #037c1f;
   border: 0;
   outline: 0;
@@ -137,3 +140,15 @@ input[type=checkbox]:checked ~ label {
   cursor: pointer;
   font-family: "Oswald", sans-serif;
 }
+
+@media screen and (min-width: 485px) {
+  .card {
+    width: 480px;
+  }
+  .new_task_text {
+    width: 398px;
+  }
+  .new_task_button {
+    width: 420px;
+  }
+} 
